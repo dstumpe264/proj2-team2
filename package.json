@@ -18,5 +18,14 @@
     "express-session": "^1.17.3",
     "mysql2": "^3.1.0",
     "sequelize": "^6.28.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dstumpe264/proj2-team2.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dstumpe264/proj2-team2/issues"
+  },
+  "homepage": "https://github.com/dstumpe264/proj2-team2#readme"
 }

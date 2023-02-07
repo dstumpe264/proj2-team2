@@ -1,0 +1,22 @@
+{
+  "name": "14-challenge-mvc",
+  "version": "1.0.0",
+  "description": "* MVC  * node * mysql * handlebars * REST * bcrypt,  * eslint * prettier, and other things",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "connect-session-sequelize": "^7.1.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-handlebars": "^6.0.7",
+    "express-session": "^1.17.3",
+    "mysql2": "^3.1.0",
+    "sequelize": "^6.28.0"
+  }
+}

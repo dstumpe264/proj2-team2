@@ -6,6 +6,9 @@
 
 Game Library allows a user to maintain a digital library of the board and card games they own. It makes it easy to view all games they own and allows them to sort them. Game Library also allows the user to connect to and find other users to talk about games and organize a party to play with. Game Library will also give the user new suggestions based on games they like and allows them to explore other games. 
 
+## Presentation
+![Presentation](assets/slides.pptx "Presentation Slides")
+
 ## Installation Instructions
 
 Game Library is an web app which can be accessed @ [!]. No installation required.

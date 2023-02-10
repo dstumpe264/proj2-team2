@@ -30,7 +30,9 @@ router.get('/:id', async (req, res) => {
 // CREATE a card
 router.post('/', async (req, res) => {
   try {
-    const locationData = await Game.create();
+    const locationData = await Game.create({
+        title: req.body.title
+    });
     res.status(200).json(locationData);
   } catch (err) {
     res.status(400).json(err);

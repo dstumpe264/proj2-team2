@@ -31,7 +31,8 @@ router.get('/:id', async (req, res) => {
 router.post('/', async (req, res) => {
   try {
     const locationData = await Example.create({
-      user_id: req.body.reader_id,
+      name: req.body.name,
+      password: req.body.password
     });
     res.status(200).json(locationData);
   } catch (err) {

@@ -15,10 +15,10 @@ Game.init(
             type: DataTypes.STRING,
             allowNull: false,
         },
-        example_id: {
+        user_id: {
             type: DataTypes.INTEGER,
             references: {
-                model: 'example',
+                model: 'user',
                 key: 'id',
             },
         },

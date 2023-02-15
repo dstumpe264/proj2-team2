@@ -2,19 +2,23 @@ const { Game } = require('../models');
 
 const gameData = [
     {
-        "title": "Monopoly"
+        "title": "Monopoly",
+        "user_id": 1
 
     },
     {
-        "title": "Scrabble"
+        "title": "Scrabble",
+        "user_id": 1
 
     },
     {
-        "title": "Dungeons and Dragons"
+        "title": "Dungeons and Dragons",
+        "user_id": 1
 
     },
     {
-        "title": "Chess"
+        "title": "Chess",
+        "user_id": 1
 
     }
 ];

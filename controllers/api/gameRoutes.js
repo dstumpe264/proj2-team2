@@ -17,7 +17,7 @@ router.get('/:id', async (req, res) => {
     const gameData = await Game.findByPk(req.params.id);
 
     if (!gameData) {
-      res.status(404).json({ message: 'No library card found with that id!' });
+      res.status(404).json({ message: 'No game found with that id!' });
       return;
     }
 
@@ -30,10 +30,11 @@ router.get('/:id', async (req, res) => {
 // CREATE a card
 router.post('/', async (req, res) => {
   try {
-    const locationData = await Game.create({
-        title: req.body.title
+    const newGame = await Game.create({
+      ...req.body,
+      user_id: req.session.user_id,
     });
-    res.status(200).json(locationData);
+    res.status(200).json(newGame);
   } catch (err) {
     res.status(400).json(err);
   }

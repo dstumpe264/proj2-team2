@@ -1,0 +1,14 @@
+.home {
+    background-image: url('/images/monopoly-board.png');
+    border: 10px solid black;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-origin: border-box;
+    background-size: contain;
+    
+}
+h2 {
+    /* text-align: center;   */
+    background-color: red;
+    color: yellow;
+}

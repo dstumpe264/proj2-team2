@@ -5,7 +5,14 @@ const withAuth = require('../utils/auth');
 
 router.get('/', async (req, res) => {
     try {
-        const gameData = await Game.findAll();
+        const gameData = await Game.findAll({
+          include: [
+            {
+              model: User,
+              attributes: ['name'],
+            },
+          ],
+    });
         // const userData = await User.findAll();
 
         const games = gameData.map((game) => game.get({plain: true }));
@@ -40,6 +47,8 @@ router.get('/game/:id', async (req, res) => {
       res.status(500).json(err);
     }
   });
+
+  
  // Use withAuth middleware to prevent access to route
  router.get('/profile', withAuth, async (req, res) => {
     try {

@@ -1,22 +1,35 @@
-<div>
-    <h2>
-        Profile
-    </h2>
-</div>
-
-<div>
-    <a href="/main">
-      <h2>
-        Home
-      </h2>
-    </a>
-
+<body>
+    
+<h1>Dungeon Master Profile</h1>
+<h2>Welcome {{name}}</h2>
     <div>
         <h3>
-            Liked Games
+         Games
         </h3>
-        <nav>
+
+        {{#each games as |game|}}
+        <div class="row">
+            <div class="col-4">
+                <nav id="navbar-example3" class="h-100 flex-column align-items-stretch pe-4 border-end">
+                <nav class="nav nav-pills flex-column">
+                    <a class="nav-link" href="#item{{game.title}}">{{game.title}}</a>
+                    <nav class="nav nav-pills flex-column">
+                    </nav>
+                </nav>
+                </nav>
+            </div>
+
+            <div class="col-8">
+                <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true" class="scrollspy-example-2" tabindex="0">
+                    <div id="item-{{game.title}}">
+                        <h4>{{game.title}}</h4>
+                        <p>{{game.text}}</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        {{/each}}
             <button class="btn" id="addgame">Add a game</button>
-        </nav>
     </div>
 </div>
+</body>
